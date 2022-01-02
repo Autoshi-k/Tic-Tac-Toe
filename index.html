@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="extra.css">
+  <script src="extra.js" defer></script>
+  <script src="script.js" defer></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link 
+    href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap"  
+    rel="stylesheet"
+  >
+  <title>Tic Tac Toe</title>
+</head>
+<body>
+  <div class="turns">
+
+      <div class = "text-container">
+        <h1>Tic Tac Toe</h1>
+        <div class="overlay"></div>
+      </div>
+      <!-- <div class="current-player-container">
+        <div class="x-player current-player">X</div>
+        <div class="o-player">O</div>
+      </div> -->
+  </div>
+    
+  <div class="container">
+    <div class="players">
+      <div class="player one current-player">
+        <div class="player-letter">X</div>
+        <div class="flex-column">
+          <h2>Player 1</h2>
+          <input type="text" value="Player 1">
+        </div>
+      </div>
+      <div class="player two">
+        <div class="player-letter">O</div>
+        <div class="flex-column">
+          <h2>Player 2</h2>
+          <input type="text" value="Player 2">
+        </div>
+      </div>
+      <div class="nicknames-btns">
+        <button class="save-nicknames">Save nicknames</button>
+        <button class="switch-roles">Switch roles</button>
+      </div>
+    </div>
+    <div class="table">
+      <div data-cell-index="0" class="cell"></div>
+      <div data-cell-index="1" class="cell"></div>
+      <div data-cell-index="2" class="cell"></div>
+      <div data-cell-index="3" class="cell"></div>
+      <div data-cell-index="4" class="cell"></div>
+      <div data-cell-index="5" class="cell"></div>
+      <div data-cell-index="6" class="cell"></div>
+      <div data-cell-index="7" class="cell"></div>
+      <div data-cell-index="8" class="cell"></div>
+    </div>
+    <button class="chat-btn restart-btn mobile-mode">game restart</button>
+
+    <div class="logs">
+      <div class="chat column-end">
+        <div class="welcome-messege">you logged into the chat</div>
+      </div>
+      <div class="chat-buttons">
+        <button class="chat-btn restart-btn">game restart</button>
+        <button class="chat-btn scores-btn">show scores</button>
+      </div>
+    </div>
+    
+  </div>
+
+</body>
+</html>
